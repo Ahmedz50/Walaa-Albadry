@@ -113,6 +113,48 @@
   font-size: 0.9rem;
   color: #666;
 }
+    .whatsapp-button {
+      width: 100%;
+      padding: 16px;
+      margin-top: 30px;
+      text-align: center;
+      border: 2px solid #9C0202;
+      background-color: transparent;
+      color: #9C0202;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: background-color 0.3s;
+      animation: pulse 2s infinite;
+    }
+
+    .whatsapp-button:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .whatsapp-icon {
+      width: 28px;
+      height: 28px;
+    }
+        @keyframes pulse {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.03);
+        opacity: 0.9;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
   </style>
 </head>
 <body>
@@ -324,6 +366,10 @@
   </section>  <footer>
     <p>صنع بأيدي سودانية - صنع بالحب رغم الحرب | ولاء البدري 2025</p>
     <p>شعارنا: أشوف نور بلادي يعود ليها تاني</p>
+  <a href="https://wa.me/249906797578" target="_blank" class="whatsapp-button">
+  
+    التواصل مع المطور
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon"></a>
   </footer>  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script>
     AOS.init({ duration: 1500, offset: 120, easing: 'ease-in-out', once: false });
     const phrases = [
